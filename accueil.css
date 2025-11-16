@@ -1,0 +1,431 @@
+/* ======================== initialisation ======================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: #f5f5f5;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+/* ======================== header ======================== */
+.main-container {
+    width: 100%;
+    height: 80px;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    position: fixed;
+    margin-bottom: 10px;
+}
+.main-nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.main-nav ul li a {
+    color: #fff;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.main-nav ul li a:hover,
+.main-nav ul li a.active {
+    background-color: #00eaff;
+    color: #333;
+    box-shadow: 5px 2px 0 rgba(0, 0, 0, 0.2);
+}
+.main-nav ul li a:hover{
+    transition: background-color 0.3s ease-in;
+}
+.container-name {
+    
+    font-size: 24px;
+    font-weight: bold;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 8px 12px;
+    transition: background-color 0.3s, color 0.3s;
+}
+em {
+    color: #f5e7e7;
+    display: block;
+
+}
+strong {
+    color: #00eaff;
+
+}
+/* ======================== fin ======================== */
+/* ====================================section qui suis-je ====================== */
+.main-section {
+    padding: 100px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #eef4fa;
+    border: 30px;
+    box-shadow:  5px 2px 0 rgba(0, 0, 0, 0.2);
+}
+.section-content {
+    max-width: 50%;
+}
+.section-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.section-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+.section-content .btn-download {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:  #00eaff;
+    color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+    margin-left: 25%;
+}
+.btn-download:hover{
+    background-color: #eef4fa;
+    color: #00eaff;
+}
+ /* ==================================== fin de la  section qui suis-je ================================  */
+
+/*==============================mon histoir =====================*/
+
+
+
+.about-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #eef4fa;
+    border: 10px #47494b;
+    border-radius: 5px;
+    padding: 50px 40px;
+    margin: 20px 0;
+}
+.about-content{
+    max-width: 600px;
+    font-size: 36px;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+.about-content p{
+    margin-bottom: 10px;
+}
+.about-content h2{
+    font-size: 36px;
+    margin-bottom: 20px;
+    translate: 25%;
+}
+
+.about-cv{
+    font-size: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00eaff;
+    color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+    /*translate: 25%;*/
+    margin-top: 20px;
+}
+.about-cv:hover{
+    background-color:  #eef4fa;
+    color: #00eaff;
+}
+
+.about-image img{
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+}
+/* ==================================== fin de la section mon histoire ========================================= */
+
+
+/* ================== section mes projets ===========  */
+.projet{
+    color: rgb(34, 30, 30);
+    font-size: 39px;
+    text-align: center;
+    font-weight: 700;
+    margin: 20px;
+}
+.projects-section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-right: 30px;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+.project1, .project2, .project3{
+    width: 400px;
+    height: 300px;
+    background-color: #eef4fa;
+    border: 50px;
+    border-radius: 5px;
+    box-shadow: 5px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.project1 h2, .project2 h2, .project3 h2{
+    text-align: center;
+    color: rgb(34, 30, 30);
+
+
+}
+.project1 p, .project3 p{
+    margin: 50px;
+
+}
+.project2 p{
+    margin:50px 50px 30px 50px;
+}
+.projet-link{
+    display: inline-block;
+    padding: 10px;
+    background-color: #00eaff;
+    color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+    margin-left: 35%;
+}
+.projet-link:hover{
+    color: #00eaff;
+    background-color: #eef4fa;
+}
+
+/* ====================fin section mes projets ================= */
+
+/* ==============================section mes competences ================== */
+.skills-section{
+    width: 100%;
+    height: auto;
+    background-color: #eef4fa;
+    border-radius: 5px;
+    box-shadow: 5px 2px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+    border: 30px;
+}
+
+.skills-section h2{
+    text-align: center;
+    padding: 20px;
+    color: rgb(34, 30, 30);
+}
+.skills{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.soft-skills, .hard-skills{
+    width: 45%;
+    height: auto;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 5px 2px 0 rgba(0, 0, 0, 0.2);
+    border: 30px;
+}
+.soft-skills h3, .hard-skills h3{
+    text-align: center;
+    margin-bottom: 15px;
+    color: rgb(34, 30, 30);
+}
+.soft-skill p, .hard-skill p{
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.progress-bar{
+    width: 100%;
+    height: 12px;
+    background-color: #dcdcdc;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.progress{
+    height: 100%;
+    background-color: #00eaff;
+    border-radius: 10px;
+    width: 0;
+    transition: width 1.5s ease ;
+}
+
+.progress.an{
+    width: 75%;
+}
+.progress.fr{
+    width: 85%;
+}
+.progress.com{
+    width: 80%;
+}
+.progress.work{
+    width: 90%;
+}
+.progress.time{
+    width: 85%;
+}
+
+
+.progress.html{
+    width: 90%;
+}
+.progress.css{
+    width: 85%;
+}
+.progress.js{
+    width: 70%;
+}
+.progress.python{
+    width: 60%;
+}
+.progress.base{
+    width: 45%;
+}
+
+/* ======================== fin section mes competences ======================== */
+/* ==================================== section fromulaire ======================== */
+.section-form{
+    width: 100%;
+    height: auto;
+    background-color: #333;
+    border-radius: 5px;
+    box-shadow: 5px 2px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+    border: 30px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.write-us{
+    width: 500px;
+    background-image: url("background2.jpeg");
+    height: 645px;
+    color: #f5f5f5;
+    text-align: center;
+    padding: 322px 0;
+    bottom: 10px;
+    border-radius: 90px 0 0 90px;
+
+}
+.write-us h3{
+    font-size: 32px;
+}
+.write-us p{
+    font-size: 18px;
+}
+@keyframes animation{
+    0%{
+        background-color: 0%;
+    }
+    100%{ background-color: 200%;}
+}
+.write-us strong{
+    background: linear-gradient(90deg, #00eaff, #6d5dfc, #ff4ecf);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: animation 4s linear infinite;
+}
+
+
+
+
+.myForm{
+    background-color: #eef4fa;
+    width: 500px;
+    height: auto;
+    padding: 50px;
+    border: 30px;
+    border-radius: 0 90px 10px 0;
+    box-shadow: 5px 2px 0 rgba(0, 0, 0, 0.2);
+
+}
+label{
+    color: #ccc;
+    display: block;
+}
+
+
+.names {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.names label{
+    display: block;
+}
+
+input, textarea{
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #00eaff;
+    border-radius: 5px;
+    font-size: 16px;
+    color: rgb(32, 31, 31);
+}
+textarea{
+    width: 100%;
+    height: 134px;
+}
+button{
+    padding: 10px 20px;
+    background-color: #00eaff;
+    color: #f5f5f5;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-left: 45%;
+}
+button:hover{
+    color: #00eaff;
+    background-color: #eef4fa;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    color: #333;
+    font-size: 16px;
+}
+
+
